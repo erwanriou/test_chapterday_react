@@ -1,9 +1,6 @@
 import React from "react"
-import { render } from "react-dom"
+import ReactDOM from "react-dom/client"
+import App from "./App"
 
-// DEFINE ROOT AND RENDER ELEMENT
-const rootElement = document.getElementById("root")
-const appRender = <App />
-
-// RENDER ARCHSPLACE
-render(appRender, rootElement)
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<App />)
